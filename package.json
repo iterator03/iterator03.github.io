@@ -1,0 +1,33 @@
+{
+  "name": "grantliv",
+  "version": "1.0.0",
+  "description": "Blood bank Management system using IoT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iterator03/GrantLiv.git"
+  },
+  "keywords": [
+    "GrantLiv",
+    "Blood",
+    "bank",
+    "management",
+    "Blood",
+    "need"
+  ],
+  "author": "Arjita Chaurasia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iterator03/GrantLiv/issues"
+  },
+  "homepage": "https://github.com/iterator03/GrantLiv#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "scripts":{
+    "start": "node index.js"
+  }
+}
