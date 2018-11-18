@@ -1,0 +1,52 @@
+<% include partials/header %>
+<link href ="public/home.css" rel ="stylesheets" />
+<div class="jumbotron container">
+    <form action="/add" method="post" name="myform">
+      <div class="form-group">
+        <label for="name">User Type</label>
+        <select name="category">
+          <option value ="1" name="category">DONOR</option>
+          <option value ="2" name="category">BLOOD BANK</option>
+          <option value ="3"name="category">NEEDY</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name"  placeholder="Enter Name" name="name"/>
+        </div>
+        <div class="form-group">
+        <label for="bloodGroup">Blood Group</label>
+        <select class="form-control" id="bloodGroup" name="group">
+          <option>NULL</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+          <option>O+</option>
+          <option>O-</option>
+          <option>B+</option>
+          <option>B-</option>
+        </select>
+        <small id="Help" class="form-text text-muted"> We'll try our best to help you!!! </small>  
+        </div>
+
+        <div class="form-group">
+        <label for="contactNo">Contact No.</label>
+        <input type="number" class="form-control" id="contactNo" placeholder="Enter Contact No." name="contact">
+        </div>
+
+        <div class="form-group">
+        <label for="e">E-mail</label>
+        <input type="email" class="form-control" id="e" placeholder="Enter e-mail address" name="email">
+        </div>
+        <div class="form-group">
+          <label for="e">Location</label>
+          <input type="text" class="form-control" id="loc" placeholder="Enter location" name="loc">
+          </div>
+      <button type="submit" class="btn btn-primary" name="submit" value="submit">Submit</button>
+    </form>
+    </div>
+
+
+
+<% include partials/footer %>
